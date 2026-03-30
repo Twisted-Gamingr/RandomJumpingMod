@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IKjAt5/a/Fs=",
+  "dgSpecHash": "Kf+I4JfKUYQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\RandomJumpMod.csproj",
+  "projectFilePath": "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\RandomJumpMod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",
@@ -48,9 +48,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "RandomJumpMod depends on UnityEngine.Modules (>= 6000.2.9.50407) but UnityEngine.Modules 6000.2.9.50407 was not found. UnityEngine.Modules 6000.2.10 was resolved instead.",
-      "projectPath": "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\RandomJumpMod.csproj",
+      "projectPath": "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\RandomJumpMod.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\RandomJumpMod.csproj",
+      "filePath": "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\RandomJumpMod.csproj",
       "libraryId": "UnityEngine.Modules",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"

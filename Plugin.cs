@@ -9,7 +9,7 @@ using Utilla.Attributes;
 
 namespace MyFirstPlugin;
 
-[BepInPlugin("com.TwistedGaming.RandomJumpMod", "RandomJumpMod", "0.0.1")]
+[BepInPlugin("com.TwistedGaming.RandomJumpMod", "RandomJumpMod", "0.0.2")]
 [BepInDependency("org.legoandmars.gorillatag.utilla", "1.5.0")] // Make sure to add Utilla 1.5.0 as a dependency!
 [ModdedGamemode] // Enable callbacks in default modded gamemodes
 public class Plugin : BaseUnityPlugin
@@ -37,9 +37,9 @@ public class Plugin : BaseUnityPlugin
             if (Player)
             {
                 Timer += Time.deltaTime;
-                if (Timer >= 20)
+                if (Timer >= 10)
                 {
-                    Player.linearVelocity = new UnityEngine.Vector3(UnityEngine.Random.Range(-5, 5), UnityEngine.Random.Range(-5, 5), UnityEngine.Random.Range(-5, 5));
+                    Player.linearVelocity = new UnityEngine.Vector3(UnityEngine.Random.Range(-10, 10), UnityEngine.Random.Range(1, 10), UnityEngine.Random.Range(-10, 10));
                     Timer = 0;
                 }
             }

@@ -103,3 +103,16 @@ C:\Users\user\Downloads\FirstModForGtag\RandomJumpMod\bin\Debug\netstandard2.0\M
 C:\Users\user\Downloads\FirstModForGtag\RandomJumpMod\bin\Debug\netstandard2.0\Meta.Voice.Opus.dll
 C:\Users\user\Downloads\FirstModForGtag\RandomJumpMod\bin\Debug\netstandard2.0\Meta.VoiceSDK.Mic.Other.dll
 C:\Users\user\Downloads\FirstModForGtag\RandomJumpMod\bin\Debug\netstandard2.0\VoiceSDK.Telemetry.Runtime.dll
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\bin\Debug\netstandard2.0\RandomJumpMod.deps.json
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\bin\Debug\netstandard2.0\RandomJumpMod.dll
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\bin\Debug\netstandard2.0\RandomJumpMod.pdb
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\bin\Debug\netstandard2.0\Utilla.dll
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJumpMod.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\MyPluginInfo.cs
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJumpMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJumpMod.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJumpMod.AssemblyInfo.cs
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJumpMod.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJu.723DDC06.Up2Date
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJumpMod.dll
+C:\Users\user\Downloads\JumpingModGtag\RandomJumpMod\obj\Debug\netstandard2.0\RandomJumpMod.pdb

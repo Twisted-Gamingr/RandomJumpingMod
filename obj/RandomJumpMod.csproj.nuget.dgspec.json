@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\RandomJumpMod.csproj": {}
+    "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\RandomJumpMod.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\RandomJumpMod.csproj": {
+    "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\RandomJumpMod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\RandomJumpMod.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\RandomJumpMod.csproj",
         "projectName": "RandomJumpMod",
-        "projectPath": "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\RandomJumpMod.csproj",
+        "projectPath": "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\RandomJumpMod.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Downloads\\FirstModForGtag\\RandomJumpMod\\obj\\",
+        "outputPath": "C:\\Users\\user\\Downloads\\JumpingModGtag\\RandomJumpMod\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
