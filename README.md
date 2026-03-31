@@ -2,6 +2,7 @@
 A mod that just makes you jump randomly in Gorilla Tag.
 
 ## **THIS DOES NEED [UTILLA](https://github.com/sirkingbinx/Utilla/releases)**
+This only works in Modded Lobbys.
 
 I am very new to creating mods so I'm not the best.
 
