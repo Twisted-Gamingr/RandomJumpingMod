@@ -1,66 +1,65 @@
-﻿using BepInEx;
+using BepInEx;
+using BepInEx.Configuration;
 using BepInEx.Logging;
 using System;
-using System.Diagnostics;
-using System.Numerics;
 using UnityEngine;
 using Utilla;
 using Utilla.Attributes;
+using GorillaLocomotion;
 
-namespace MyFirstPlugin;
-
-[BepInPlugin("com.TwistedGaming.RandomJumpMod", "RandomJumpMod", "0.0.2")]
-[BepInDependency("org.legoandmars.gorillatag.utilla", "1.5.0")] // Make sure to add Utilla 1.5.0 as a dependency!
-[ModdedGamemode] // Enable callbacks in default modded gamemodes
-public class Plugin : BaseUnityPlugin
+namespace RandomJumpingModV2
 {
-    internal static new ManualLogSource Logger;
-
-    private Rigidbody Player;
-
-    bool inAllowedRoom = false;
-
-    private float Timer;
-
-    private void Awake()
+    [BepInPlugin("com.TwistedGaming.RandomJumpModV2", "RandomJumpModV2", "0.0.2")]
+    [BepInDependency("org.legoandmars.gorillatag.utilla", "1.5.0")] // Make sure to add Utilla 1.5.0 as a dependency!
+    [ModdedGamemode] // Enable callbacks in default modded gamemodes
+    public class Plugin : BaseUnityPlugin
     {
-        // Plugin startup logic
-        Logger = base.Logger;
-        Logger.LogInfo($"Plugin {"com.TwistedGaming.RandomJumpingMod"} is loaded!");
-    }
+        internal static new ManualLogSource Logger;
 
-    private void Update()
-    {
-        if (inAllowedRoom)
+        private Rigidbody Player;
+
+        private bool inAllowedRoom = false;
+
+        private void Awake()
         {
-            Player = GameObject.Find("GorillaPlayer").GetComponent<Rigidbody>();
-            if (Player)
+            // Plugin startup logic
+            Logger = base.Logger;
+            Logger.LogInfo($"Plugin {"com.TwistedGaming.RandomJumpingMod"} is loaded!");
+        }
+
+        private void Update()
+        {
+            if (inAllowedRoom)
             {
-                Timer += Time.deltaTime;
-                if (Timer >= 10)
+                Player = GameObject.Find("GorillaPlayer").GetComponent<Rigidbody>();
+                if (Player)
                 {
-                    Player.linearVelocity = new UnityEngine.Vector3(UnityEngine.Random.Range(-10, 10), UnityEngine.Random.Range(1, 10), UnityEngine.Random.Range(-10, 10));
-                    Timer = 0;
+                    bool v = UnityInput.Current.GetKeyDown(KeyCode.Space);
+                    if (v)
+                    {
+                        GTPlayer.Instance.playerRigidBody.linearVelocity = new Vector3(UnityEngine.Random.Range(-10f, 10f), UnityEngine.Random.Range(1f, 15f), UnityEngine.Random.Range(-10f, 10f));
+                        Logger.LogInfo("Jumped! Applied velocity.");
+                    }
+                }
+                else
+                {
+                    Logger.LogError("GorillaPlayer isnt found. :(");
                 }
             }
-            else
-            {
-                Logger.LogError("GorillaPlayer isnt found. :(");
-            }
         }
-    }
 
-    [ModdedGamemodeJoin]
-    private void RoomJoined(string gamemode)
-    {
-        // The room is modded. Enable mod stuff.
-        inAllowedRoom = true;
-    }
+        [ModdedGamemodeJoin]
+        private void RoomJoined(string gamemode)
+        {
+            // The room is modded. Enable mod stuff.
+            inAllowedRoom = true;
+        }
 
-    [ModdedGamemodeLeave]
-    private void RoomLeft(string gamemode)
-    {
-        // The room was left. Disable mod stuff.
-        inAllowedRoom = false;
+        [ModdedGamemodeLeave]
+        private void RoomLeft(string gamemode)
+        {
+            // The room was left. Disable mod stuff.
+            inAllowedRoom = false;
+        }
     }
 }
